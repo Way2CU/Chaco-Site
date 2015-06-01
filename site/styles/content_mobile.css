@@ -81,14 +81,18 @@ div.products {
 	position: relative;
 	background-image: url(../images/mobile-shops-background.jpg);
 	background-repeat: no-repeat;
-	background-position: center 1040px;
+	background-position: center 990px;
 	background-size: 100% auto;
 	position: relative;
+	z-index: 10;
 }
 
 div.products h3 {
 	display: block;
-	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-top: 50px;
 	padding-bottom: 310px;
 }
 
@@ -122,7 +126,7 @@ div.products h3 a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
+	margin-top: 10px;
 	padding: 10px 20px;
 	background-color: #39667f;
 	border-radius: 7px;
@@ -191,6 +195,7 @@ div.features {
 	display: block;
 	padding:20px calc((100vw - 1200px) / 2);
 	text-align: center;
+	position: relative;
 }
 
 div.features div.feature {
