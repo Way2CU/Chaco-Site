@@ -25,11 +25,12 @@
  header {
 	display: block;
 	text-align: center;
-	background-image: url(../images/grunge-bottom-mobile.svg),url(../images/mobile-header-background-01.jpg);
+	background-color: white;
+	background-image: url(../images/top.svg),url(../images/mobile-header-background-01.jpg);
 	background-repeat: no-repeat,no-repeat;
 	background-position: center bottom ,center top;
 	background-size: 100% auto ,100% auto;
-	min-height: 450px;
+	min-height: 465px;
 	position: relative;
 }
 
@@ -79,6 +80,7 @@ div.products {
 	display: block;
 	text-align: center;
 	position: relative;
+	background-color: white;
 	background-image: url(../images/mobile-shops-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center 990px;
@@ -485,10 +487,10 @@ div.branch {
 	padding: 20px 0px;
 	text-align: center;
     background-color: rgb(215, 223, 192);
-	background-image: url(../images/grunge-bottom-mobile.svg);
+	background-image: url(../images/bottom.svg);
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	background-size: 640px 29px;
+	background-size: 100% auto;
 
 }
 
@@ -543,4 +545,53 @@ div.branch h3 a {
 div.branch h3 a:hover {
 	background-color: #1d7db3;
 }
+
+div.dialog_box {
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.91);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+	z-index: 10000;
+}
+
+div.dialog_box a.close {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 1.1em;
+	color: #e2ad22;
+	font-size: 1.6em;
+	border: 1px solid #e2ad22;
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+div.dialog_box div.branches {
+	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.dialog_box div.branches h2 {
+	display: block;
+	text-align: center;
+	color:white;
+}
+
+div.dialog_box div.branches p {
+	display: block;
+	padding-top: 10px;
+	color:white;
+}
+
 
