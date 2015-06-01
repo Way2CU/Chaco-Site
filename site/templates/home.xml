@@ -54,19 +54,48 @@
 			</div>
 
 			<div class="gallery">
-				<cms:module
-					name="gallery"
-					action="show_image_list"
-					group="gallery_images"
-					template="parts/gallery_image.xml"
-					/>
-				<h2><cms:text constant="gallery_title"/></h2>
-				<cms:module
-					name="youtube"
-					action="show_list"
-					group="video_chako"
-					template="parts/video.xml"
-					/>
+				<cms:desktop>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="gallery_images"
+						template="parts/gallery_image.xml"
+						/>
+				</cms:desktop>
+				<cms:mobile>
+					<div class="scroll">
+						<div class="images_wrap">
+							<cms:module
+								name="gallery"
+								action="show_image_list"
+								group="gallery_images"
+								template="parts/gallery_image.xml"
+								/>
+						</div>
+					</div>
+				</cms:mobile>
+				<cms:desktop>
+					<h2><cms:text constant="gallery_title"/></h2>
+					<cms:module
+						name="youtube"
+						action="show_list"
+						group="video_chako"
+						template="parts/video.xml"
+						/>
+				</cms:desktop>
+				<cms:mobile>
+					<h2><cms:text constant="gallery_title"/></h2>
+					<div class="video_scroll">
+						<div class="video_wrap">
+							<cms:module
+								name="youtube"
+								action="show_list"
+								group="video_chako"
+								template="parts/video.xml"
+								/>
+						</div>
+					</div>
+				</cms:mobile>
 
 			</div>
 
