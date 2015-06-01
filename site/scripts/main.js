@@ -51,6 +51,28 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 
 	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
+
+	// Function for showing Dialog Box
+
+	var link = $('div.branch h3 a');
+	var link1 = $('div.products h3 a');
+	var btnClose = $('div.dialog_box a.close');
+	var dialog = $('div.dialog_box');
+
+	btnClose.on('click' , function(){
+		dialog.css('visibility','hidden')
+			  .css('opacity','0');
+	});
+
+	link.on('click' , function(){
+		dialog.css('visibility','visible')
+			  .css('opacity','1');
+	});
+
+	link1.on('click' , function(){
+		dialog.css('visibility','visible')
+			  .css('opacity','1');
+	});
 };
 
 
