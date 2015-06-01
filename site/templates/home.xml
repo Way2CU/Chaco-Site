@@ -75,22 +75,48 @@
 					</div>
 				</cms:mobile>
 				<cms:desktop>
+					<h2><cms:text constant="big_video_title"/></h2>
+					<div class="main_video">
+						<cms:module
+							name="youtube"
+							action="show"
+							text_id="chako_main"
+							embed="1"
+							width="600"
+							height="400"
+							cms:eval="text_id"
+							/>
+					</div>
+
 					<h2><cms:text constant="gallery_title"/></h2>
 					<cms:module
 						name="youtube"
 						action="show_list"
-						group="video_chako"
+						group_text_id="video_chako"
 						template="parts/video.xml"
 						/>
 				</cms:desktop>
 				<cms:mobile>
+					<h2><cms:text constant="big_video_title"/></h2>
+					<div class="main_video">
+						<cms:module
+							name="youtube"
+							action="show"
+							text_id="chako_main"
+							embed="1"
+							width="600"
+							height="400"
+							player_id=""
+							cms:eval="text_id"
+							/>
+					</div>
 					<h2><cms:text constant="gallery_title"/></h2>
 					<div class="video_scroll">
 						<div class="video_wrap">
 							<cms:module
 								name="youtube"
 								action="show_list"
-								group="video_chako"
+								group_text_id="video_chako"
 								template="parts/video.xml"
 								/>
 						</div>
