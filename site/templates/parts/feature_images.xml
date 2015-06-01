@@ -1,0 +1,11 @@
+<document>
+	<div class="feature">
+		<img
+			alt="$params['title'][$language]"
+			src="$params['image']"
+			cms:eval="alt,src"
+			/>
+		<span><cms:var name="$params['description'][$language]"/></span>
+	</div>
+
+</document>

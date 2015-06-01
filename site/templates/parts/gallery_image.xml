@@ -1,0 +1,13 @@
+<document>
+
+			<a href="$params['image']" class="image direct" cms:eval="href">
+				<img
+					alt="$params['title'][$language]"
+					src="$params['image']"
+					cms:eval="alt,src"
+					/>
+			</a>
+
+
+
+</document>
