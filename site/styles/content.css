@@ -271,7 +271,7 @@ div.contact {
 	background-image:url(../images/grunge-top.svg), url(../images/footer-background.jpg);
 	background-repeat:no-repeat,no-repeat;
 	background-position:center top,center top;
-	background-size:1920px 90px, 1920px 1113px;
+	background-size:1920px 99px, 1920px 1113px;
 	min-height: 1113px;
 	position: relative;
 
@@ -368,7 +368,7 @@ form div.controls button {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
-	padding: 25px 20px;
+	padding: 20px 20px;
 	background-color: #39667f;
 	border-radius: 7px;
 	border: none;
@@ -461,4 +461,159 @@ div.branch h3 a {
 
 div.branch h3 a:hover {
 	background-color: #1d7db3;
+}
+
+
+/*Tablet Version*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+header{
+  display: block;
+  text-align: center;
+  background-image: url(../images/grunge-texture-white.svg),url(../images/header-background.jpg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: center 330px ,center top;
+  background-size: 1024px auto, 1024px 373px;
+  min-height: 373px;
+  position: relative;
+}
+
+header h1 {
+  display: block;
+  padding-top: 130px;
+  background-image: url(../images/logo-color.svg);
+  background-repeat: no-repeat;
+  background-position: center 15px;
+  background-size: 180px 116px;
+  font-size: 3.3em;
+  font-weight: 700;
+  color: #39667f;
+}
+
+header span {
+  display: block;
+  color: #FFFFFF;
+  font-size: 4.3em;
+  font-weight: 400;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+div.products {
+  display: block;
+  margin-top: 0px;
+  text-align: center;
+  position: relative;
+}
+
+div.products h2 {
+  display: block;
+  color: #39667f;
+}
+
+div.products h3 {
+	font-size: 1.1em;
+}
+
+div.features div.feature {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 450px;
+  height: 232px;
+  overflow: hidden;
+}
+
+div.features div.apma_article {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+div.features div.chako_article {
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 15px;
+	padding-left: 450px;
+	background-image: url(../images/Smiley-gecko.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 400px 266px;
+	text-align: right;
+	width: 500px;
+}
+
+div.gallery {
+  display: block;
+  padding: 150px calc((100vw - 1200px) / 2) 50px;
+  background-color: #e9e8e3;
+  background-image: url(../images/top-grunge-texture-white.svg), url(../images/gallery-background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, top center;
+  background-size: 1920px 534px, 1580px 1200px;
+  text-align: center;
+  min-height: 0px;
+}
+
+div.gallery a {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+div.gallery h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #696057;
+  font-size: 2.7em;
+  font-weight: 400;
+  width: 900px;
+}
+
+div.gallery iframe {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+div.contact {
+  display: block;
+  padding: 0px calc((100vw - 1200px) / 2);
+  background-image: url(../images/grunge-top.svg), url(../images/footer-background.jpg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: center top,-240px top;
+  background-size: 1920px 99px, 1920px 1113px;
+  min-height: 1113px;
+  position: relative;
+}
+
+div.form_wrap {
+  display: inline-block;
+  text-align: center;
+  margin-top: 350px;
+  margin-right: 15px;
+  background-color: rgba(0, 0, 0, 0.60);
+  border: 1px solid #e2ad22;
+  width: 450px;
+  position: relative;
+}
+
+div.branch h3 {
+	font-size: 1.1em;
+}
+
 }
