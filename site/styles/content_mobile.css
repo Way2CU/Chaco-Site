@@ -1,0 +1,541 @@
+/**
+ * Mobile Style Sheet
+ * Chaco Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+
+ /*RESET*/
+ h1,h2,h3,h4,h5,h6,p {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+
+ h2 {
+ 	font-size: 1.5em;
+ }
+
+ h3 {
+ 	font-size: 1.1em;
+ }
+
+
+
+ header {
+	display: block;
+	text-align: center;
+	background-image: url(../images/grunge-bottom-mobile.svg),url(../images/mobile-header-background-01.jpg);
+	background-repeat: no-repeat,no-repeat;
+	background-position: center bottom ,center top;
+	background-size: 100% auto ,100% auto;
+	min-height: 450px;
+	position: relative;
+}
+
+header h1 {
+	display: block;
+	padding-top: 150px;
+	background-image: url(../images/logo-color.svg);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: 200px 129px;
+	font-size: 2em;
+	font-weight: 700;
+	color: #39667f;
+}
+
+header span {
+	display: block;
+	color: #39667f;
+	font-size: 1.8em;
+	font-weight: 400;
+	position: relative;
+}
+
+header span:after {
+	content: "";
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	margin-left: -20px;
+	background-image: url(../images/icon-arrow-white.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	-webkit-animation:bounce 1s infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes bounce {
+	from{top:120%;}
+	to{top:145%;}
+}
+
+div.products {
+	display: block;
+	text-align: center;
+	position: relative;
+	background-image: url(../images/mobile-shops-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center 1040px;
+	background-size: 100% auto;
+	position: relative;
+}
+
+div.products h3 {
+	display: block;
+	margin-top: 10px;
+	padding-bottom: 310px;
+}
+
+div.products h3 span:first-of-type {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	background-image: url(../images/lametayel.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+div.products h3 span:last-of-type {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	background-image: url(../images/rikushet.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100px 50px;
+	width: 100px;
+	height: 50px;
+}
+
+div.products h3 a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	background-color: #39667f;
+	border-radius: 7px;
+	border-bottom: 3px solid #1f3b4d;
+	font-weight: 400;
+	font-size: 0.8em;
+	width: 120px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+div.products h3 a:hover {
+	background-color: #1d7db3;
+}
+
+div.products h2 {
+	display: block;
+	color:#696057;
+}
+
+div.item {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 300px;
+}
+
+div.item figure {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/thumbnail-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 270px 200px;
+	width: 270px;
+	height: 200px;
+}
+
+div.item figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 35px;
+}
+
+div.item figure span {
+	display: block;
+	color:#696057;
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+div.item p {
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*Features Section*/
+
+div.features {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+	text-align: center;
+}
+
+div.features div.feature {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	position: relative;
+	width:95%;
+	height:100%;
+	overflow: hidden;
+}
+
+div.features div.feature img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition:all 0.3s;
+}
+
+
+div.features div.feature span {
+	position: absolute;
+	text-align: right;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -130px;
+	padding: 10px 20px;
+	background-color: rgba(226, 225, 212, 0.85);
+	width: 220px;
+	font-size: 0.9em;
+}
+
+div.features div.apma_article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 190px;
+	text-align: center;
+	background-image: url(../images/apma-logo.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 130px 169px;
+	color: #696057;
+	font-weight: bold;
+	width: 300px;
+}
+
+div.features div.chako_article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 230px;
+	background-image: url(../images/Smiley-gecko.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 300px 200px;
+	text-align: center;
+	width: 300px;
+}
+
+div.features div.chako_article h2:first-of-type {
+	display: block;
+	margin-bottom: 10px;
+	color: #e2ad22;
+}
+
+div.features div.chako_article h2:last-of-type {
+	display: block;
+	color:#696057;
+	font-weight: 400;
+}
+
+/*Gallery Section*/
+
+div.gallery {
+	display: block;
+	text-align:center;
+	padding:150px calc((100vw - 1200px) / 2) 50px;
+	background-color:#e9e8e3;
+	background-image:url(../images/gallery-background-mobile.jpg);
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size:640px 1750px;
+}
+
+div.gallery div.scroll {
+	display: block;
+	overflow-x:scroll;
+	direction: ltr;
+}
+
+div.gallery div.images_wrap {
+	display: block;
+	width: 2880px;
+}
+
+div.gallery a {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	width: 300px;
+	height:200px;
+	position: relative;
+	overflow: hidden;
+}
+
+div.gallery a img {
+	width: 100%;
+	height: auto;
+	transition:all 0.3s;
+
+}
+
+div.gallery h2 {
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #696057;
+	font-weight: 400;
+}
+
+div.video_scroll {
+	display: block;
+	overflow-x:scroll;
+	direction: ltr;
+}
+
+div.video_scroll div.video_wrap {
+	display: block;
+	width: 960px;
+}
+
+div.gallery iframe {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	width: 300px;
+	height: 200px;
+}
+
+/*Contact Section*/
+
+div.contact {
+	display: block;
+	padding:485px calc((100vw - 1200px) / 2) 0px;
+	background-image:url(../images/mobile-footer-design.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:100% auto;
+
+	position: relative;
+
+}
+
+div.form_wrap {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.60);
+	border:1px solid #e2ad22;
+	width:95%;
+	position: relative;
+}
+
+div.form_wrap:before {
+	content: "";
+	position: absolute;
+	bottom:110%;
+	left: 50%;
+	margin-left: -125px;
+	background-image: url(../images/logo-white.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 250px 158px;
+	width: 250px;
+	height: 158px;
+}
+
+div.form_wrap h2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px 0px;
+	color: white;
+	font-weight: 400;
+	font-size: 1.5em;
+	width: 70%;
+}
+
+form {
+	display: block;
+}
+
+form label {
+	display: block;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+form label:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right:5px;
+	background-image: url(../images/form-icons-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 200px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+form label:nth-of-type(2):before {
+	background-position: -50px 0px;
+}
+
+form label:nth-of-type(3):before {
+	background-position: -100px 0px;
+}
+
+form label:nth-of-type(4):before {
+	background-position: -150px 0px;
+}
+
+form label input {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 40px;
+	border: 1px solid #696057;
+	color: #696057;
+	font-size: 1.1em;
+	width: 80%;
+}
+
+form div.controls {
+	display: block;
+}
+
+form div.controls button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	background-color: #39667f;
+	border-radius: 7px;
+	border: none;
+	border-bottom: 3px solid #1f3b4d;
+	font-size: 1.3em;
+	color: white;
+	width: 65%;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+form div.controls button:hover {
+	background-color:#1d7db3;
+}
+
+::-webkit-input-placeholder {
+   color: #696057;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #696057;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #696057;
+}
+
+:-ms-input-placeholder {
+   color: #696057;
+}
+
+div.branch {
+	display: block;
+	padding: 20px 0px;
+	text-align: center;
+    background-color: rgb(215, 223, 192);
+	background-image: url(../images/grunge-bottom-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 640px 29px;
+
+}
+
+div.branch h3 {
+	display: block;
+	margin-top: 10px;
+}
+
+div.branch h3 span:first-of-type {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	background-image: url(../images/lametayel.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+div.branch h3 span:last-of-type {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	background-image: url(../images/rikushet.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100px 50px;
+	width: 100px;
+	height: 50px;
+}
+
+div.branch h3 a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 10px 20px;
+	background-color: #39667f;
+	border-radius: 7px;
+	border-bottom: 3px solid #1f3b4d;
+	font-weight: 400;
+	font-size: 0.8em;
+	width: 120px;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+div.branch h3 a:hover {
+	background-color: #1d7db3;
+}
+
