@@ -141,6 +141,16 @@
 
 			</div>
 
+			<div class="dialog_box">
+				<a class="close" href="javascript:void(0)">x</a>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="branches"
+					template="parts/article_heading.xml"
+					/>
+			</div>
+
 
 
 
