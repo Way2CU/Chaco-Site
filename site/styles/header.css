@@ -1,0 +1,42 @@
+/**
+ * HeaderStyle Sheet
+ * Chaco Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+
+header {
+	display: block;
+	text-align: center;
+	background-image:url(../images/grunge-texture-white.svg),url(../images/header-background.jpg);
+	background-repeat:no-repeat,no-repeat;
+	background-position:center bottom ,center top;
+	background-size:1920px 89px ,1920px 700px;
+	min-height: 700px;
+	position: relative;
+}
+
+header h1 {
+	display: block;
+	padding-top: 230px;
+	background-image: url(../images/logo-color.svg);
+	background-repeat: no-repeat;
+	background-position: center 50px;
+	background-size: 232px 150px;
+	font-size: 3.3em;
+	font-weight: 700;
+	color: #39667f;
+}
+
+header span {
+	display: block;
+	color: #39667f;
+	font-size: 4.3em;
+	font-weight: 300;
+}
+
+
+
+
+
