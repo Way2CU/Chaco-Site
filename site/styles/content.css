@@ -519,6 +519,63 @@ div.dialog_box div.branches p {
 
 
 /*Tablet Version*/
+@media only screen and (max-device-width:1280px) {
+header {
+    display: block;
+    text-align: center;
+    background-image: url(../images/grunge-texture-white.svg),url(../images/header-background.jpg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: center bottom ,center top;
+    background-size: 1920px 89px ,1280px 466px;
+    min-height: 466px;
+    position: relative;
+}
+
+header h1 {
+	display: block;
+	padding-top: 165px;
+	background-image: url(../images/logo-color.svg);
+	background-repeat: no-repeat;
+	background-position: center 20px;
+	background-size: 232px 150px;
+	font-size: 3.3em;
+	font-weight: 700;
+	color: #39667f;
+}
+
+header span {
+    display: block;
+    color: white;
+    font-size: 4em;
+    font-weight: 300;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+div.products {
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+div.products h2 {
+    display: block;
+    color: #39667f;
+}
+
+div.contact {
+    display: block;
+    padding: 0px calc((100vw - 1200px) / 2);
+    background-image: url(../images/grunge-top.svg), url(../images/footer-background.jpg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: center top,0px top;
+    background-size: 1920px 99px, 1920px 1113px;
+    min-height: 1113px;
+    position: relative;
+}
+
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 header{
   display: block;
