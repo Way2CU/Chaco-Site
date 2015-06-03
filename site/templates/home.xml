@@ -103,11 +103,10 @@
 							name="youtube"
 							action="show"
 							text_id="chako_main"
-							embed="1"
 							width="600"
 							height="400"
-							player_id=""
 							cms:eval="text_id"
+							template="parts/mobile_video.xml"
 							/>
 					</div>
 					<h2><cms:text constant="gallery_title"/></h2>
