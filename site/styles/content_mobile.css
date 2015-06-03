@@ -66,6 +66,7 @@ header span:after {
 	background-size: 40px 40px;
 	width: 40px;
 	height: 40px;
+    transform: translateZ(0);
 	-webkit-animation:bounce 1s infinite;
 	-webkit-animation-direction: alternate;
 	-webkit-animation-timing-function: linear;
@@ -328,6 +329,25 @@ div.gallery h2 {
 	width: 95%;
 }
 
+div.gallery div.main_video a {
+	position: relative;
+}
+
+div.gallery div.main_video a:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	left: 50%;
+	margin-left: -25px;
+	background-image: url(../images/youtube-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+	width: 50px;
+	height: 50px;
+}
+
 div.video_scroll {
 	display: block;
 	overflow-x:scroll;
@@ -339,7 +359,26 @@ div.video_scroll div.video_wrap {
 	width: 960px;
 }
 
-div.gallery iframe {
+div.video_scroll div.video_wrap a {
+	position: relative;
+}
+
+div.video_scroll div.video_wrap a:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	left: 50%;
+	margin-left: -25px;
+	background-image: url(../images/youtube-icon.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+div.gallery a {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 10px;
@@ -453,7 +492,6 @@ form div.controls button {
 	margin-bottom: 15px;
 	padding: 10px 20px;
 	background-color: #39667f;
-	border-radius: 7px;
 	border: none;
 	border-bottom: 3px solid #1f3b4d;
 	font-size: 1.3em;

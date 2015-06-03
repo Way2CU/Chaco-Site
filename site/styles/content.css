@@ -236,7 +236,7 @@ div.gallery a:hover:before {
 div.gallery a img {
 	width:100%;
 	height: auto;
-	transition:all 0.6s;
+	transition:all 0.3s;
 
 }
 
@@ -286,6 +286,7 @@ div.form_wrap {
 	display: inline-block;
 	text-align: center;
 	margin-top: 350px;
+	padding-bottom: 15px;
 	background-color: rgba(0, 0, 0, 0.60);
 	border:1px solid #e2ad22;
 	width: 450px;
@@ -374,12 +375,11 @@ form div.controls button {
 	margin-bottom: 15px;
 	padding: 20px 20px;
 	background-color: #39667f;
-	border-radius: 7px;
 	border: none;
 	border-bottom: 3px solid #1f3b4d;
 	font-size: 1.5em;
 	color: white;
-	width: 82%;
+	width: 65%;
 	cursor: pointer;
 	text-decoration: none;
 	transition: all 0.3s;
