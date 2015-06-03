@@ -1,13 +1,30 @@
 <document>
-	<cms:module
-		name="youtube"
-		action="show"
-		id="$params['id']"
-		embed="1"
-		width="360"
-		height="240"
-		enable_api="1"
-		player_id="'player_'.$params['id']"
-		cms:eval="id,player_id"
-	/>
+	<cms:desktop>
+		<cms:module
+			name="youtube"
+			action="show"
+			id="$params['id']"
+			embed="1"
+			width="360"
+			height="240"
+			enable_api="1"
+			player_id="'player_'.$params['id']"
+			cms:eval="id,player_id"
+		/>
+	</cms:desktop>
+
+	<cms:mobile>
+		<a
+			class="youtube mobile"
+			href="'http://www.youtube.com/watch?v='.$params['video_id']"
+			title="$params['title'][$language]"
+			cms:eval="href,title"
+			>
+			<img
+				src="$params['image']"
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+			/>
+		</a>
+	</cms:mobile>
 </document>
