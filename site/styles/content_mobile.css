@@ -356,7 +356,7 @@ div.video_scroll {
 
 div.video_scroll div.video_wrap {
 	display: block;
-	width: 960px;
+	/*width: 960px;*/
 }
 
 div.video_scroll div.video_wrap a {
