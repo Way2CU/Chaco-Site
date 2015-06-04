@@ -136,6 +136,7 @@
 
 				<div class="branch">
 					<h3><cms:text constant="commerce"/></h3>
+					<a href="http://www.foxmed.co.il" alt="foxmed"></a>
 				</div>
 
 			</div>
@@ -149,11 +150,6 @@
 					template="parts/article_heading.xml"
 					/>
 			</div>
-
-
-
-
-
 
 		</body>
 	</html>
