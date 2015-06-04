@@ -434,9 +434,9 @@ div.branch > a {
 	background-image: url(../images/fox_logo.png);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 300px 63px;
-	width: 300px;
-	height: 63px;
+	background-size: 150px 31px;
+	width: 150px;
+	height: 31px;
 }
 
 div.branch h3 span:first-of-type {
