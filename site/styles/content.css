@@ -287,127 +287,16 @@ div.contact {
 
 }
 
-div.form_wrap {
+div.contact span {
 	display: inline-block;
-	text-align: center;
-	margin-top: 350px;
-	padding-bottom: 15px;
-	background-color: rgba(0, 0, 0, 0.60);
-	border:1px solid #e2ad22;
-	width: 450px;
-	position: relative;
-}
-
-div.form_wrap:before {
-	content: "";
-	position: absolute;
-	bottom:110%;
-	left: 50%;
-	margin-left: -150px;
+	vertical-align: top;
+	margin-top: 80px;
 	background-image: url(../images/logo-white.svg);
 	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 300px 190px;
+	background-position: center center;
+	background-size: 300px 193px;
 	width: 300px;
-	height: 190px;
-}
-
-div.form_wrap h2 {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 15px 0px;
-	color: white;
-	font-weight: 400;
-	font-size: 2.2em;
-	width: 70%;
-}
-
-form {
-	display: block;
-}
-
-form label {
-	display: block;
-	margin-bottom: 15px;
-	position: relative;
-}
-
-form label:before {
-	content: "";
-	position: absolute;
-	top: -10px;
-	right: 10px;
-	background-image: url(../images/form-icons-sprite.svg);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	background-size: 320px 80px;
-	width: 100px;
-	height: 100px;
-}
-
-form label:nth-of-type(2):before {
-	background-position: -80px 0px;
-}
-
-form label:nth-of-type(3):before {
-	background-position: -160px 0px;
-}
-
-form label:nth-of-type(4):before {
-	background-position: -240px 0px;
-}
-
-form label input {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 50px;
-	border:1px solid #696057;
-	color: #696057;
-	font-size: 1.3em;
-	width: 70%;
-}
-
-
-form div.controls {
-	display: block;
-}
-
-form div.controls button {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 15px;
-	padding: 20px 20px;
-	background-color: #39667f;
-	border: none;
-	border-bottom: 3px solid #1f3b4d;
-	font-size: 1.5em;
-	color: white;
-	width: 65%;
-	cursor: pointer;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-
-form div.controls button:hover {
-	background-color:#1d7db3;
-}
-
-::-webkit-input-placeholder {
-   color: #696057;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #696057;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #696057;
-}
-
-:-ms-input-placeholder {
-   color: #696057;
+	height: 193px;
 }
 
 div.branch {
@@ -484,54 +373,43 @@ div.branch h3 a:hover {
 	background-color: #1d7db3;
 }
 
-div.dialog_box {
-	position: fixed;
-	top: 50px;
-	left: 50%;
-	margin-left: -400px;
-	width: 800px;
-	height: auto;
-	border: 3px solid #e2ad22;
-	box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.8);
-	background-color: rgba(0, 0, 0, 0.91);
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.5s;
-	z-index: 10000;
-}
-
-div.dialog_box a.close {
-	position: absolute;
-	top: 18px;
-	right: 18px;
-	width: 32px;
-	height: 32px;
-	text-align: center;
-	line-height: 1.1em;
-	color: #e2ad22;
-	font-size: 1.6em;
-	border: 1px solid #e2ad22;
-	border-radius: 50%;
-	text-decoration: none;
-}
-
-div.dialog_box div.branches {
-	padding-bottom: 40px;
-	padding-top: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-div.dialog_box div.branches h2 {
+footer {
 	display: block;
+	padding:0px calc((100vw - 1200px) / 2);
+	background-color: rgba(43, 36, 5, 1);
 	text-align: center;
-	color:white;
 }
 
-div.dialog_box div.branches p {
-	display: block;
-	padding-top: 10px;
-	color:white;
+footer span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	background-image: url(../images/way2cu-color.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px 34.5px;
+	font-size: 0.9em;
+	color: white;
+	text-align: left;
+	direction: ltr;
+	width: 270px;
+}
+footer span a {
+	padding-left: 5px;
+	text-decoration: underline;
+}
+
+
+footer span a {
+	padding-left: 5px;
+	color:#449bb5;
+	transition:all 0.3s;
+}
+
+footer span a:hover {
+	color:#5bc2d8;
 }
 
 
@@ -734,16 +612,18 @@ div.contact {
   position: relative;
 }
 
-div.form_wrap {
-  display: inline-block;
-  text-align: center;
-  margin-top: 350px;
-  margin-right: 15px;
-  background-color: rgba(0, 0, 0, 0.60);
-  border: 1px solid #e2ad22;
-  width: 450px;
-  position: relative;
+div.contact span {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	background-image: url(../images/logo-white.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 300px 193px;
+	width: 300px;
+	height: 193px;
 }
+
 
 div.branch h3 {
 	font-size: 1.1em;

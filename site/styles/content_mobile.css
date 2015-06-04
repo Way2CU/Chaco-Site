@@ -392,14 +392,25 @@ div.gallery a {
 
 div.contact {
 	display: block;
-	padding:485px calc((100vw - 1200px) / 2) 0px;
+	padding:360px calc((100vw - 1200px) / 2) 0px;
 	background-image:url(../images/mobile-footer-design.jpg);
 	background-repeat:no-repeat;
 	background-position:center top;
 	background-size:100% auto;
-
 	position: relative;
 
+}
+
+div.contact span {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/logo-white.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 250px 158px;
+	width: 250px;
+	height: 158px;
 }
 
 div.form_wrap {
@@ -601,54 +612,44 @@ div.branch h3 a:hover {
 	background-color: #1d7db3;
 }
 
-div.dialog_box {
-	position: fixed;
-	top: 50px;
-	left: 50%;
-	margin-left: -153px;
-	width: 300px;
-	height: auto;
-	border: 3px solid #e2ad22;
-	box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.8);
-	background-color: rgba(0, 0, 0, 0.91);
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.5s;
-	z-index: 10000;
-}
 
-div.dialog_box a.close {
-	position: absolute;
-	top: 18px;
-	right: 18px;
-	width: 32px;
-	height: 32px;
-	text-align: center;
-	line-height: 1.1em;
-	color: #e2ad22;
-	font-size: 1.6em;
-	border: 1px solid #e2ad22;
-	border-radius: 50%;
-	text-decoration: none;
-}
 
-div.dialog_box div.branches {
-	padding-bottom: 40px;
-	padding-top: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-div.dialog_box div.branches h2 {
+footer {
 	display: block;
+	padding:0px calc((100vw - 1200px) / 2);
+	background-color: rgba(43, 36, 5, 1);
 	text-align: center;
-	color:white;
 }
 
-div.dialog_box div.branches p {
-	display: block;
-	padding-top: 10px;
-	color:white;
+footer span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	background-image: url(../images/way2cu-color.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px 34.5px;
+	font-size: 0.8em;
+	color: white;
+	text-align: left;
+	direction: ltr;
+	width: 230px;
+}
+footer span a {
+	padding-left: 5px;
+	text-decoration: underline;
 }
 
+
+footer span a {
+	padding-left: 5px;
+	color:#449bb5;
+	transition:all 0.3s;
+}
+
+footer span a:hover {
+	color:#5bc2d8;
+}
 
