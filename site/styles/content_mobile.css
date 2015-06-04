@@ -524,12 +524,26 @@ form div.controls button:hover {
 
 div.branch {
 	display: block;
-	padding: 20px 0px;
+	padding: 10px 0px;
 	text-align: center;
 	background-image: url(../images/bottom.svg);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: 100% auto;
+	min-height: 120px;
+}
+
+div.branch > a {
+	display: block;
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/fox_logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px 31px;
+	width: 150px;
+	height: 31px;
 }
 
 div.branch h3 {
