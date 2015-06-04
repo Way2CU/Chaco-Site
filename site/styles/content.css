@@ -126,6 +126,10 @@ div.features div.feature {
 	overflow: hidden;
 }
 
+div.features div.feature:hover span {
+	right:-100%;
+}
+
 div.features div.feature img {
 	display: block;
 	width: 125%;
@@ -146,6 +150,7 @@ div.features div.feature span {
 	background-color: rgba(226, 225, 212, 0.85);
 	width: 70%;
 	font-size: 1.3em;
+	transition:all 0.8s;
 }
 
 div.features div.apma_article {
@@ -702,8 +707,8 @@ div.gallery iframe {
   vertical-align: top;
   margin-left: 10px;
   margin-right: 10px;
-  width: 300px;
-  height: 200px;
+  width: 600px;
+  height: 400px;
 }
 
 div.contact {
