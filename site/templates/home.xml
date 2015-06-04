@@ -125,31 +125,17 @@
 			</div>
 
 			<div class="contact">
-				<div class="form_wrap">
-					<h2><cms:text constant="form_title"/></h2>
-					<cms:module
-						name="contact_form"
-						action="show"
-						text_id="contact_form"
-						/>
-				</div>
-
+				<span class="logo"></span>
 				<div class="branch">
 					<h3><cms:text constant="commerce"/></h3>
 					<a href="http://www.foxmed.co.il" alt="foxmed"></a>
 				</div>
-
 			</div>
 
-			<div class="dialog_box">
-				<a class="close" href="javascript:void(0)">x</a>
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="branches"
-					template="parts/article_heading.xml"
-					/>
-			</div>
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
+
 
 		</body>
 	</html>
