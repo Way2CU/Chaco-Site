@@ -128,11 +128,11 @@
 				<span class="logo"></span>
 				<div class="branch">
 					<h3><cms:text constant="commerce"/></h3>
-					<a href="http://www.foxmed.co.il" alt="foxmed"></a>
 				</div>
 			</div>
 
 			<footer>
+				<a href="http://www.foxmed.co.il" alt="foxmed"></a>
 				<span><cms:text constant="copyright"/></span>
 			</footer>
 
