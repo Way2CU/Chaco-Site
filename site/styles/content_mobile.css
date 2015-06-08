@@ -392,7 +392,7 @@ div.gallery a {
 
 div.contact {
 	display: block;
-	padding:360px calc((100vw - 1200px) / 2) 0px;
+	padding:340px calc((100vw - 1200px) / 2) 0px;
 	background-image:url(../images/mobile-footer-design.jpg);
 	background-repeat:no-repeat;
 	background-position:center top;
@@ -544,19 +544,6 @@ div.branch {
 	min-height: 120px;
 }
 
-div.branch > a {
-	display: block;
-	margin-top:10px;
-	margin-left: auto;
-	margin-right: auto;
-	background-image: url(../images/fox_logo.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 150px 31px;
-	width: 150px;
-	height: 31px;
-}
-
 div.branch h3 {
 	display: block;
 	margin-left: auto;
@@ -619,6 +606,18 @@ footer {
 	padding:0px calc((100vw - 1200px) / 2);
 	background-color: rgba(43, 36, 5, 1);
 	text-align: center;
+}
+
+footer > a {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/fox_logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px 31px;
+	width: 150px;
+	height: 31px;
 }
 
 footer span {

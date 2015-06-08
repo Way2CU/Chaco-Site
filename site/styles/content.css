@@ -315,19 +315,6 @@ div.branch {
 	background-size: 1920px 89px;
 }
 
-div.branch > a {
-	display: block;
-	margin-top:10px;
-	margin-left: auto;
-	margin-right: auto;
-	background-image: url(../images/fox_logo.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 150px 31px;
-	width: 150px;
-	height: 31px;
-}
-
 div.branch h3 span:first-of-type {
 	display: inline-block;
 	vertical-align: middle;
@@ -378,6 +365,20 @@ footer {
 	padding:0px calc((100vw - 1200px) / 2);
 	background-color: rgba(43, 36, 5, 1);
 	text-align: center;
+}
+
+footer > a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top:10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/fox_logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 150px 31px;
+	width: 150px;
+	height: 31px;
 }
 
 footer span {
