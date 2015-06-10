@@ -126,9 +126,9 @@
 			</div>
 
 			<div class="contact">
-				<span class="logo"></span>
+				<span class="logo"><cms:text constant="commerce"/></span>
 				<div class="branch">
-					<h3><cms:text constant="commerce"/></h3>
+					<!-- <h3><cms:text constant="commerce"/></h3> -->
 				</div>
 			</div>
 
