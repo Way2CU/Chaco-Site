@@ -121,8 +121,8 @@ div.features div.feature {
 	margin-right: 5px;
 	margin-bottom: 10px;
 	position: relative;
-	width: 580px;
-	height: 300px;
+	width: 550px;
+	height: 284px;
 	overflow: hidden;
 }
 
@@ -289,12 +289,17 @@ div.contact {
 
 div.contact span {
 	display: inline-block;
+	text-align: center;
 	vertical-align: top;
 	margin-top: 80px;
+	padding-top: 210px;
 	background-image: url(../images/logo-white.svg);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
 	background-size: 300px 193px;
+	font-size: 1.5em;
+	color: white;
+	font-weight: 700;
 	width: 300px;
 	height: 193px;
 }
@@ -308,57 +313,13 @@ div.branch {
 	left: 0px;
 	width: 100%;
 	height: auto;
-	background-color: rgba(226, 225, 212, 0.85);
 	background-image: url(../images/grunge-bottom.svg);
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: 1920px 89px;
 }
 
-div.branch h3 span:first-of-type {
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-image: url(../images/lametayel.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 50px 50px;
-	width: 50px;
-	height: 50px;
-}
 
-div.branch h3 span:last-of-type {
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 10px;
-	padding-right: 10px;
-	background-image: url(../images/rikushet.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100px 50px;
-	width: 100px;
-	height: 50px;
-}
-
-div.branch h3 a {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: 10px;
-	padding:5px 20px;
-	background-color: #39667f;
-	border-radius: 7px;
-	border-bottom: 3px solid #1f3b4d;
-	font-size: 0.8em;
-	font-weight: 400;
-	color:white;
-	text-decoration: none;
-	transition:all 0.3s;
-}
-
-div.branch h3 a:hover {
-	background-color: #1d7db3;
-}
 
 footer {
 	display: block;
@@ -373,7 +334,7 @@ footer > a {
 	margin-top:10px;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url(../images/fox_logo.png);
+	background-image: url(../images/logo_white.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 150px 31px;
@@ -615,12 +576,18 @@ div.contact {
 
 div.contact span {
 	display: inline-block;
+	text-align: center;
 	vertical-align: top;
-	margin-right: 20px;
+	margin-top: 80px;
+	padding-top: 210px;
+	margin-right: 15px;
 	background-image: url(../images/logo-white.svg);
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center top;
 	background-size: 300px 193px;
+	font-size: 1.5em;
+	color: white;
+	font-weight: 700;
 	width: 300px;
 	height: 193px;
 }
