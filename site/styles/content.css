@@ -297,10 +297,10 @@ div.contact span {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 300px 193px;
-	font-size: 1.5em;
+	font-size: 2.3em;
 	color: white;
 	font-weight: 700;
-	width: 300px;
+	width: 550px;
 	height: 193px;
 }
 
@@ -425,7 +425,7 @@ div.contact {
     padding: 0px calc((100vw - 1200px) / 2);
     background-image: url(../images/grunge-top.svg), url(../images/footer-background.jpg);
     background-repeat: no-repeat,no-repeat;
-    background-position: center top,0px top;
+    background-position: center top,-135px top;
     background-size: 1920px 99px, 1920px 1113px;
     min-height: 1113px;
     position: relative;
