@@ -28,6 +28,17 @@
 					/>
 
 				<h3><cms:text constant="commerce"/></h3>
+				<div class="adress">
+					<p><cms:text constant="company"/></p>
+					<p><cms:text constant="adress"/></p>
+					<a
+						href="'tel:'.urlencode(Language::getText('number'))"
+						cms:eval="href"
+						class=""
+						>
+						<cms:text constant="number_text"/>
+					</a>
+				</div>
 			</div>
 
 			<div class="features">
@@ -127,6 +138,17 @@
 
 			<div class="contact">
 				<span class="logo"><cms:text constant="commerce"/></span>
+				<div class="adress">
+				<p><cms:text constant="company"/></p>
+				<p><cms:text constant="adress"/></p>
+				<a
+					href="'tel:'.urlencode(Language::getText('number'))"
+					cms:eval="href"
+					class=""
+					>
+					<cms:text constant="number_text"/>
+				</a>
+				</div>
 				<div class="branch">
 					<!-- <h3><cms:text constant="commerce"/></h3> -->
 				</div>
