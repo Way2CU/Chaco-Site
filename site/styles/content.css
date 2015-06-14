@@ -20,6 +20,25 @@ div.products {
 	position: relative;
 }
 
+div.adress {
+	display: block;
+	padding-top: 10px;
+}
+
+div.adress p {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div.adress a {
+	display: inline-block;
+	vertical-align: middle;
+	color:black;
+	margin-right: 10px;
+}
+
 div.products h3 span:first-of-type {
 	display: inline-block;
 	vertical-align: middle;
@@ -302,6 +321,19 @@ div.contact span {
 	font-weight: 700;
 	width: 550px;
 	height: 193px;
+}
+
+div.contact div.adress {
+	display: block;
+	margin-top: -100px;
+}
+
+div.contact div.adress p {
+	color:white;
+}
+
+div.contact div.adress a {
+	color:white;
 }
 
 div.branch {
@@ -595,6 +627,13 @@ div.contact span {
 
 div.branch h3 {
 	font-size: 1.1em;
+}
+
+div.contact div.adress {
+	display: block;
+	padding-right: 15px;
+	width: 400px;
+	margin-top: -100px;
 }
 
 }

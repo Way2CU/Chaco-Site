@@ -91,6 +91,15 @@ div.products {
 	z-index: 10;
 }
 
+div.products div.adress {
+	display: block;
+	margin-top: -300px;
+}
+
+div.products div.adress a {
+	color:black;
+}
+
 div.products h3 {
 	display: block;
 	margin-left: auto;
@@ -399,6 +408,17 @@ div.contact {
 	background-size:100% auto;
 	position: relative;
 
+}
+
+div.contact div.adress {
+	display: block;
+	margin-top: -60px;
+	text-align: center;
+	color: white;
+}
+
+div.contact div.adress a {
+	color:white;
 }
 
 div.contact span {
