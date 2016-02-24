@@ -46,6 +46,52 @@ Site.is_mobile = function() {
 };
 
 /**
+ * Retrieve direct video URL from specified video id. Upon retrieving data
+ * specified callback function will be called with exactly one object parameter
+ * containing `url`, `width` and `height` of the video in question.
+ *
+ * @param string video_id         Unique video id;
+ * @param function callback       Function to be called after video data has been obtained;
+ * @param integer prefered_height Prefered video height, default 720p.
+ */
+Site.get_vimeo_video_url = function(video_id, callback, prefered_height) {
+	var url = '//player.vimeo.com/video/{video_id}/config'.replace('{video_id}', video_id);
+	var height = prefered_height || 720;
+
+	var request = {
+			async: true,
+			cache: true,
+			dataType: 'json',
+			success: function(data) {
+				// make sure we got the right data out
+				if (!('request' in data))
+					return;
+
+				// find requested height
+				var previous_height = 0;
+				var result = null;
+				for (var index in data.request.files.progressive) {
+					var video = data.request.files.progressive[index];
+					if (previous_height > video.height && video.height <= height) {
+						result = {
+								url: video.url,
+								width: video.width,
+								height: video.height
+							};
+						previous_height = video.height;
+					}
+				}
+
+				// call function after we've found the right url
+				if (result !== null)
+					callback(result);
+			}
+		};
+
+	$.ajax(url, request);
+};
+
+/**
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
