@@ -96,20 +96,19 @@
 							name="youtube"
 							action="show"
 							text_id="chako_main"
-							embed="1"
-							width="600"
-							height="400"
-							cms:eval="text_id"
+							template="parts/video.xml"
 							/>
 					</div>
 
 					<h2><cms:text constant="gallery_title"/></h2>
-					<cms:module
-						name="youtube"
-						action="show_list"
-						group_text_id="video_chako"
-						template="parts/video.xml"
-						/>
+					
+						<cms:module
+							name="youtube"
+							action="show_list"
+							group_text_id="video_chako"
+							template="parts/video.xml"
+							/>
+					
 				</cms:desktop>
 				<cms:mobile>
 					<h2><cms:text constant="big_video_title"/></h2>
@@ -118,10 +117,7 @@
 							name="youtube"
 							action="show"
 							text_id="chako_main"
-							width="600"
-							height="400"
-							cms:eval="text_id"
-							template="parts/mobile_video.xml"
+							template="parts/video.xml"
 							/>
 					</div>
 					<h2><cms:text constant="gallery_title"/></h2>
