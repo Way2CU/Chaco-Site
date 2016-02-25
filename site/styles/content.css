@@ -269,6 +269,7 @@ div.gallery a:hover img {
 	width:115%;
 }
 
+div.gallery > div.main_video > h2,
 div.gallery h2 {
 	display: block;
 	margin-left: auto;
@@ -286,11 +287,28 @@ div.gallery div.main_video {
 	margin-bottom: 20px;
 }
 
+div.gallery div.video {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	width: 500px;
+}
+
+div.gallery div.video p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	color: black;
+	font-size: 1.3em;
+	font-weight: 400;
+}
+
 div.gallery iframe {
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 10px;
-	margin-right: 10px;
 }
 
 /*Contact Section*/
