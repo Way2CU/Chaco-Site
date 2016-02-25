@@ -15,9 +15,10 @@
 
 div.products {
 	display: block;
-	margin-top: -150px;
+	margin-top: -250px;
 	text-align: center;
 	position: relative;
+	z-index: 150;
 }
 
 div.adress {
