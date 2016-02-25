@@ -5,13 +5,16 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
-			<cms:collection include="page_control,animation_chain"/>
+			<cms:collection include="page_control,animation_chain,communicator"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 		<cms:raw file="parts/gtm.txt"/>
 			<header>
+				<cms:desktop>
+					<iframe src="https://player.vimeo.com/video/156431526?autoplay=1&amp;loop=1" ></iframe>
+				</cms:desktop>
 				<h1><cms:text constant="header"/></h1>
 				<span><cms:text constant="header_desc"/></span>
 			</header>
