@@ -90,7 +90,7 @@
 					</div>
 				</cms:mobile>
 				<cms:desktop>
-					<h2><cms:text constant="big_video_title"/></h2>
+					<!-- <h2><cms:text constant="big_video_title"/></h2> -->
 					<div class="main_video">
 						<cms:module
 							name="youtube"
